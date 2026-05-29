@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mouli-portfolio
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    autoDeployTrigger: commit
